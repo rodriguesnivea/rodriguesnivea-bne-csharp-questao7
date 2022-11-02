@@ -4,9 +4,9 @@ class Program
 {
     static void Main()
     {
-        calculaEPrintaRendimento(1000.00, 0.03);
-        calculaEPrintaRendimento(5500.00, 0.0248);
-        calculaEPrintaRendimento(12000.00, 0.02);
+        calculaEPrintaRendimento(1000.00, 3.00);
+        calculaEPrintaRendimento(5500.00, 2.48);
+        calculaEPrintaRendimento(12000.00, 2.00);
     }
 
     private static void calculaEPrintaRendimento(double valorPresente, double taxaDeJuros)
