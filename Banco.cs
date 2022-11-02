@@ -38,7 +38,7 @@ namespace questao07
         public void RendePeriodo(double dias)
         {
             double periodo = dias / 30;
-            _valorAtual *= Math.Pow((1 + _taxaDeJuros), periodo);
+            _valorAtual *= Math.Pow((1 + (_taxaDeJuros/100)), periodo);
             _rendimentoMensal = _valorAtual - _valorInvestido - _rendaLiquida;
             _rendaLiquida += _rendimentoMensal;
             _mes += periodo;
@@ -47,7 +47,7 @@ namespace questao07
 
         private void CalculoRendimento()
         {
-            _valorAtual *= (1 + _taxaDeJuros);
+            _valorAtual *= (1 + (_taxaDeJuros/100));
             _rendimentoMensal = _valorAtual - _valorInvestido - _rendaLiquida;
             _rendaLiquida += _rendimentoMensal;
             if (_mes == 5)
